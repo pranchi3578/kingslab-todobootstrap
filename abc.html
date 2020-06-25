@@ -23,24 +23,24 @@
       <h1>ToDo</h1>
       <p>never miss out</p>
     </div>
+    <form action="index.php" method="post">
+      <div class="list" id="list">
+        <div class="container">
+          <div class="form-group">
+            <label for="Task">Task:</label>
+            <textarea
+              class="form-control"
+              rows="5"
+              id="task"
+              onfocus="this.value=''"
+              name="task"
+            ></textarea>
+          </div>
 
-    <div class="list" id="list">
-      <div class="container">
-        <div class="form-group">
-          <label for="Task">Task:</label>
-          <textarea
-            class="form-control"
-            rows="5"
-            id="task"
-            onfocus="this.value=''"
-            value="click here "
-          ></textarea>
+          <button class="btn btn-light" type="submit" id="add">Add</button>
         </div>
-
-        <button class="btn btn-light" type="button " id="add">Add</button>
       </div>
-    </div>
-
+    </form>
     <script src="./app.js"></script>
   </body>
 </html>
